@@ -12,7 +12,7 @@ import { PropertyList } from "@/components/PropertyList";
 import { PropertyDetail } from "@/components/PropertyDetail";
 import { InspectionForm } from "@/components/InspectionForm";
 import { HighRiskList } from "@/components/HighRiskList";
-
+import { ReportPreview } from "@/components/ReportPreview";
 
 
 
@@ -137,6 +137,8 @@ export default function App() {
              onFormChange={setForm}
               onSubmit={submitInspection}
               />
+
+              <ReportPreview property={selected} />
 
             <section className="rounded-2xl bg-slate-900 p-5 text-white shadow-sm">
               <div className="flex items-center justify-between gap-4">
